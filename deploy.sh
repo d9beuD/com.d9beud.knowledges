@@ -3,6 +3,9 @@
 # abort on errors
 set -e
 
+git config --global user.email "vincent.bathelier@protonmail.com"
+git config --global user.name "Vincent Bathelier"
+
 # build
 npm run docs:build
 
