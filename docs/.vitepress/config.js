@@ -76,7 +76,20 @@ function sidebarCours() {
 }
 
 function sidebarCoursHTML() {
-  return []
+  /**
+   * @type {import('vitepress').DefaultTheme.NavItem[]}
+   */
+  const sidebar = [
+    {
+      text: 'Langage HTML',
+      collapsible: true,
+      items: [
+        { text: 'Introduction', link: '/courses/html/language/' }
+      ]
+    }
+  ]
+
+  return sidebar
 }
 
 function sidebarCoursCSSLanguage() {
