@@ -12,6 +12,7 @@ export default defineConfig({
     nav: nav(),
 
     sidebar: {
+      '/courses/html/': sidebarCoursHTML(),
       '/courses/': sidebarCours(),
     },
 
@@ -35,9 +36,9 @@ function nav() {
     {
       text: 'Cours',
       items: [
-        { text: 'HTML' },
-        { text: 'CSS' },
-        { text: 'PHP' },
+        { text: 'Cours de HTML', link: '/courses/html/language/' },
+        { text: 'Cours de CSS', link: '/courses/css/language/' },
+        { text: 'Cours de PHP', link: '/courses/php/language/' },
       ]
     }
   ]
@@ -51,22 +52,22 @@ function sidebarCours() {
     {
       text: 'Cours de HTML',
       items: [
-        { text: 'Langage HTML5', link: '/cours/html/language/' },
+        { text: 'Langage HTML5', link: '/courses/html/language/' },
       ]
     },
     {
       text: 'Cours de CSS',
       items: [
-        { text: 'Langage CSS3', link: '/cours/css/language/' },
-        { text: 'Framework Bootstrap', link: '/cours/css/bootstrap/' },
+        { text: 'Langage CSS3', link: '/courses/css/language/' },
+        { text: 'Framework Bootstrap', link: '/courses/css/bootstrap/' },
       ]
     },
     {
       text: 'Cours de PHP',
       items: [
-        { text: 'Langage PHP 8', link: '/cours/php/language/' },
-        { text: 'Framework Symfony', link: '/cours/php/symfony/' },
-        { text: 'Framework Slim', link: '/cours/php/slim/' },
+        { text: 'Langage PHP 8', link: '/courses/php/language/' },
+        { text: 'Framework Symfony', link: '/courses/php/symfony/' },
+        { text: 'Framework Slim', link: '/courses/php/slim/' },
       ]
     },
   ]
@@ -75,7 +76,20 @@ function sidebarCours() {
 }
 
 function sidebarCoursHTML() {
-  return []
+  /**
+   * @type {import('vitepress').DefaultTheme.NavItem[]}
+   */
+  const sidebar = [
+    {
+      text: 'Langage HTML',
+      collapsible: true,
+      items: [
+        { text: 'Introduction', link: '/courses/html/language/' }
+      ]
+    }
+  ]
+
+  return sidebar
 }
 
 function sidebarCoursCSSLanguage() {
