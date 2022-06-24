@@ -84,7 +84,7 @@ function sidebarCoursHTML() {
       text: 'Langage HTML',
       collapsible: true,
       items: [
-        { text: 'Introduction', link: '/courses/html/language/' }
+        { text: 'Introduction', link: '/courses/html/language/' },
       ]
     }
   ]
