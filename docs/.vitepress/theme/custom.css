@@ -2,6 +2,11 @@
   --vp-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto,
     'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --vp-c-brand: #0d6efd;
+  --vp-c-brand-light: #6ea8fe;
+  --vp-c-brand-lighter: #9ec5fe;
+  --vp-c-brand-dark: #084298;
+  --vp-c-brand-darker: #052c65;
 }
 
 em {
