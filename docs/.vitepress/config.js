@@ -85,6 +85,7 @@ function sidebarCoursHTML() {
       collapsible: true,
       items: [
         { text: 'Introduction', link: '/courses/html/language/' },
+        { text: 'La syntaxe', link: '/courses/html/language/01-la-syntaxe' },
       ]
     }
   ]
