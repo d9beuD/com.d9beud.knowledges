@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/com.d9beud.knowledges',
+  base: '/',
 
   lang: 'fr-FR',
   title: 'd9beuD\'s Knowledges',
