@@ -8,7 +8,7 @@ Quand on regarde une page web, il faut imaginer l'ensemble des éléments comme 
 
 ## Représenter les balises
 
-Pour représenter les blocs sous forme de code, on utilise ce que l'on appelle les **balises** ; vous les avez aperçues dans [l'introduction](./#preparer-son-environnement-de-travail). C'est un mot clé entouré de chevrons `<` et `>`. Il existe les balises **ouvrantes** et les balises **fermantes** qui permettent de coder de nouveaux éléments entre les deux (exemple : `<html>` et `</html>`).
+Pour représenter les blocs sous forme de code, on utilise ce que l'on appelle les **balises** ; vous les avez aperçues dans [l'introduction](./#preparer-son-environnement-de-travail). C'est un mot-clé entouré de chevrons `<` et `>`. Il existe les balises **ouvrantes** et les balises **fermantes** qui permettent de coder de nouveaux éléments entre les deux (exemple : `<html>` et `</html>`).
 
 ::: info
 Quelques rares éléments n'ont pas besoin d'avoir de balises fermantes : ce sont les balises **auto-fermantes** qui seront abordées plus tard dans ce cours.
@@ -16,7 +16,7 @@ Quelques rares éléments n'ont pas besoin d'avoir de balises fermantes : ce son
 
 ## Le DOCTYPE
 
-Le langage HTML existe depuis 1993. Heureusement, sa norme a depuis évoluée de nombreuses fois. La norme actuelle est appelée *HTML5* et est celle traitée dans ce cours.
+Le langage HTML existe depuis 1993. Heureusement, sa norme a depuis évolué de nombreuses fois. La norme actuelle appelée *HTML5* est celle traitée dans ce cours.
 
 Pour indiquer au navigateur que le document interprété suit la norme *HTML5*, on fait recours au **DOCTYPE**. C'est la première balise apparaissant au début du document `.html`.
 
@@ -63,9 +63,9 @@ Plusieurs balises *HTML5* ont été définies par l'organisation [WHATWG](https:
 
 - `<main>` : Définit le contenu principal de la page, théoriquement unique sur la page.
 - `<article>` : Définit une zone indépendante de la page comme un article ou un commentaire.
-- `<header>` : Définit un entête de page et ton contenu. :warning: Attention à ne pas la confondre avec la balise `<head>`.
+- `<header>` : Définit un entête de page et son contenu. :warning: Attention à ne pas la confondre avec la balise `<head>`.
 - `<footer>` : Définit le pied de page et son contenu.
-- `<div>` : Défini une division de la page. C'est l'élément le plus utilisé dans un document HTML.
+- `<div>` : Définit une division de la page. C'est l'élément le plus utilisé dans un document HTML.
 
 Si chaque balise a un rôle qui lui est propre, c'est en partie pour aider les logiciels d'assistance pour personnes malvoyantes à dicter de manière précise le contenu des pages visitées. Les moteurs de recherche se basent aussi sur ces balises pour mieux indexer votre site et le proposer dans des résultats de recherche pertinents.
 
@@ -101,7 +101,7 @@ Si l'on écrit simplement du texte à l'intérieur de la balise `<body>` et que 
 Quelle impatience, j'y viens.
 :::
 
-Notre petit texte va s'imposer en se transformant en titre. Pour cela, nous auront besoin d'une balise `<h>` suivi d'un numéro allant d'un 1 à 6 (`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` et `<h6>`). Ce numéro représente le niveau d'importance du titre, 1 étant le plus important et 6 le moins important. En règle générale, les navigateurs affichent les titres les plus importants plus grand que les moins important.
+Notre petit texte va s'imposer en se transformant en titre. Pour cela, nous aurons besoin d'une balise `<h>` suivie d'un numéro allant d'un 1 à 6 (`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` et `<h6>`). Ce numéro représente le niveau d'importance du titre, 1 étant le plus important et 6 le moins important. En règle générale, les navigateurs affichent les titres les plus importants avec une taille de texte supérieure à celle des moins importants.
 
 ```html{5-7}
 <!DOCTYPE html>
@@ -131,7 +131,7 @@ Nous pouvons aussi représenter notre texte normal en tant que paragraphe grâce
 </html>
 ```
 
-Pour formater le texte en mettant des mots en **gras** ou en *italique*, nous pouvons utiliser respectivement les balises `<b>` (comme "bold" en anglais) ou `<i>`.
+Pour formater le texte en mettant des mots en **gras** ou en *italique*, nous pouvons utiliser respectivement les balises `<b>` ou `<i>` (comme "bold" et "italic" en anglais).
 
 ```html{5-7}
 <!DOCTYPE html>
@@ -146,14 +146,14 @@ Pour formater le texte en mettant des mots en **gras** ou en *italique*, nous po
 ```
 
 ::: info
-Jusque-là, toutes les balises que nous avions vues étaient des balises dites "bloc", elles prennent toute la largeur de la page. Au contraire, les balises `<b>` et `<i>` sont dites "en ligne" car elles ne font qu'entourer du texte.
+Jusque-là, toutes les balises que nous avions vues étaient des balises dites "bloc", elles prennent toute la largeur de la page. À contrario, les balises `<b>` et `<i>` sont dites "en ligne" car elles ne font qu'entourer du texte.
 :::
 
 ## Les attributs
 
 Les attributs sont des paramètres pouvant être ajoutés à une balise. Ils sont indispensables pour ajouter un lien sur un mot ou préciser la source d'une image.
 
-On les retrouve à l'intérieur d'une balise ouvrante ou auto-fermante. Pour un lien (parfois appelé "ancre"), on utilise la balise en ligne `<a>` et on lui ajoute l'attribut `href`. Pour une image, c'est la balise auto-fermante `<img />` et l'attribut `src`.
+On les retrouve à l'intérieur d'une balise ouvrante ou auto-fermante. Pour un lien (aussi appelé "ancre"), on utilise la balise en ligne `<a>` et on lui ajoute l'attribut `href`. Pour une image, c'est la balise auto-fermante `<img />` et l'attribut `src`.
 
 ```html
 <a href="exemple.com/lien">Ceci est un lien</a>

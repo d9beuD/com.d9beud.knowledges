@@ -5,13 +5,13 @@ title: HTML, Introduction
 
 ## Qu'est-ce que le langage HTML ?
 
-Le HTML veut dire HyperText Markup Language, autrement dit Langage de Balisage HyperTexte. C'est une syntaxe de code héritée du [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language) dont tous les navigateur web ont la connaissance et qui permet de structurer une page web.
+Le HTML veut dire HyperText Markup Language, autrement dit Langage de Balisage HyperTexte. C'est une syntaxe de code héritée du [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language) permettant de structurer une page web et dont tous les navigateurs web ont la connaissance.
 
 ## Préparer son environnement de travail
 
 Écrire du code nécessite d'avoir un éditeur adapté. Si votre éditeur de texte est acceptable pour lire et écrire un langage naturel, la lisibilité sera bien insuffisante pour un langage informatique.
 
-C'est pourquoi il a été inventé la coloration syntaxique. Chaque  groupe de caractère et mot clé a une fonction différente et celle-ci est représentée par une couleur. Prenez comme exemple l'extrait de code ci-dessous.
+C'est pourquoi il a été inventé la coloration syntaxique. Chaque  groupe de caractères et mots clé a une fonction différente et celle-ci est représentée par une couleur. Prenez comme exemple l'extrait de code ci-dessous.
 
 ```html
 <!DOCTYPE html>
